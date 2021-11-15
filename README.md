@@ -1,5 +1,8 @@
 # Box
 
+[![Swift](https://img.shields.io/badge/Swift-5.5-orange.svg)](https://www.swift.org)
+[![License](https://img.shields.io/github/license/kkk669/swift-box.svg)](LICENSE)
+
 This Swift package provides two types, `Box` and `BoxObject`.
 
 [`Box`](./Sources/Box/Box.swift) is a value type that wraps another value type for heap allocation like [Rust's `Box`](https://doc.rust-lang.org/std/boxed/struct.Box.html). Also, it is implemented with copy-on-write behavior.
