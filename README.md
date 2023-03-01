@@ -6,7 +6,7 @@
 
 This Swift package provides two types, `Box` and `BoxObject`.
 
-[`Box`](./Sources/Box/Box.swift) is a value type that wraps another value type for heap allocation like [Rust's `Box`](https://doc.rust-lang.org/std/boxed/struct.Box.html). Also, it is implemented with copy-on-write behavior.
+[`Box`](./Sources/Box/Box.swift) is a value type that wraps another value type ~~for heap allocation~~ like [Rust's `Box`](https://doc.rust-lang.org/std/boxed/struct.Box.html). Also, it is implemented with copy-on-write behavior.
 
 [`BoxObject`](./Sources/Box/BoxObject.swift) is almost the same as `Box`, but it's a reference type. If you copy the wrapped value, you can call its `copy()` method.
 
