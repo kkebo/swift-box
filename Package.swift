@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Box",
+    name: "swift-box",
     products: [
         .library(
             name: "Box",
