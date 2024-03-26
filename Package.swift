@@ -1,4 +1,4 @@
-// swift-tools-version:5.5
+// swift-tools-version:6.0
 
 import PackageDescription
 
@@ -10,15 +10,26 @@ let package = Package(
             targets: ["Box"]
         )
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/apple/swift-testing", from: "0.6.0")
+    ],
     targets: [
         .target(
             name: "Box",
-            dependencies: []
+            dependencies: [],
+            swiftSettings: [
+                .enableExperimentalFeature("NoncopyableGenerics"),
+                .enableExperimentalFeature("MoveOnlyPartialConsumption"),
+                .enableExperimentalFeature("BorrowingSwitch"),
+            ]
         ),
         .testTarget(
             name: "BoxTests",
-            dependencies: ["Box"]
+            dependencies: [
+                "Box",
+                .product(name: "Testing", package: "swift-testing"),
+            ]
         ),
-    ]
+    ],
+    swiftLanguageVersions: [.version("6")]
 )
