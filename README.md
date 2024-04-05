@@ -1,9 +1,8 @@
 # Box
 
 ![coverage](coverage.svg)
-[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fkkk669%2Fswift-box%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/kkk669/swift-box)
-[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fkkk669%2Fswift-box%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/kkk669/swift-box)
-[![License](https://img.shields.io/github/license/kkk669/swift-box.svg)](LICENSE)
+[![Swift](https://img.shields.io/badge/Swift-6.0-orange.svg)](https://www.swift.org)
+[![License](https://img.shields.io/github/license/kkebo/swift-box.svg)](LICENSE)
 
 This Swift package provides a type, `Box`.
 
