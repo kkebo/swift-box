@@ -20,12 +20,12 @@ struct Foo: ~Copyable {
 
 var foo = Foo(a: 3, b: .init(4))
 
-XCTAssertEqual(foo.a, 3)
-XCTAssertEqual(foo.b.value, 4)
+assert(foo.a == 3)
+assert(foo.b.value == 4)
 
 foo.a = 10
 foo.b.value = 5
 
-XCTAssertEqual(foo.a, 10)
-XCTAssertEqual(foo.b.value, 5)
+assert(foo.a == 10)
+assert(foo.b.value == 5)
 ```
