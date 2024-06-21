@@ -1,8 +1,6 @@
 coverage:
   paths:
     - coverage_report.lcov
-  exclude:
-    - '**/Tests/**'
   badge:
     path: coverage.svg
 push:
