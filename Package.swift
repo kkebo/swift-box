@@ -31,5 +31,5 @@ let package = Package(
             ]
         ),
     ],
-    swiftLanguageVersions: [.version("6")]
+    swiftLanguageVersions: [.v6]
 )
