@@ -11,7 +11,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-testing", from: "0.10.0")
+        .package(url: "https://github.com/swiftlang/swift-testing", from: "0.10.0")
     ],
     targets: [
         .target(
