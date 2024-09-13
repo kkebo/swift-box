@@ -10,9 +10,6 @@ let package = Package(
             targets: ["Box"]
         )
     ],
-    dependencies: [
-        .package(url: "https://github.com/swiftlang/swift-testing", from: "0.10.0")
-    ],
     targets: [
         .target(
             name: "Box",
@@ -26,8 +23,7 @@ let package = Package(
         .testTarget(
             name: "BoxTests",
             dependencies: [
-                "Box",
-                .product(name: "Testing", package: "swift-testing"),
+                "Box"
             ]
         ),
     ],
