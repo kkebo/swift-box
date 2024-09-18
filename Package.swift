@@ -11,21 +11,12 @@ let package = Package(
         )
     ],
     targets: [
-        .target(
-            name: "Box",
-            dependencies: [],
-            swiftSettings: [
-                .enableExperimentalFeature("NoncopyableGenerics"),
-                .enableExperimentalFeature("MoveOnlyPartialConsumption"),
-                .enableExperimentalFeature("BorrowingSwitch"),
-            ]
-        ),
+        .target(name: "Box"),
         .testTarget(
             name: "BoxTests",
             dependencies: [
                 "Box"
             ]
         ),
-    ],
-    swiftLanguageModes: [.v6]
+    ]
 )
