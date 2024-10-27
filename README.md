@@ -6,7 +6,7 @@
 
 This Swift package provides a type, `Box`.
 
-[`Box`](./Sources/Box/Box.swift) is a value type that wraps another value type for heap allocation like [Rust's `Box`](https://doc.rust-lang.org/std/boxed/struct.Box.html). Also, it is implemented with copy-on-write behavior.
+[`Box`](./Sources/Box.swift) is a value type that wraps another value type for heap allocation like [Rust's `Box`](https://doc.rust-lang.org/std/boxed/struct.Box.html). Also, it is implemented with copy-on-write behavior.
 
 ## Examples
 
