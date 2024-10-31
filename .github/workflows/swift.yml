@@ -28,4 +28,4 @@ jobs:
     container: swift:6.0
     steps:
       - uses: actions/checkout@v4
-      - run: swift format lint -rs .
+      - run: swift format lint -rsp .
