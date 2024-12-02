@@ -20,7 +20,7 @@ jobs:
             ${{ runner.os }}-spm-
       - run: swift --version
       - run: swift build --build-tests --disable-xctest --enable-code-coverage
-      - run: swift test --skip-build --disable-xctest --enable-code-coverage
+      - run: swift test --skip-build --disable-xctest --enable-code-coverage --parallel
       - run: llvm-cov export --format=lcov .build/debug/swift-boxPackageTests.xctest --instr-profile .build/debug/codecov/default.profdata --ignore-filename-regex=".build|Tests" > coverage_report.lcov
       - uses: k1LoW/octocov-action@v1
   lint:
